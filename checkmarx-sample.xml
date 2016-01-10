@@ -1,0 +1,2898 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CxXMLResults InitiatorName="admin admin" Owner="admin@cx" ScanId="1000006" ProjectId="1" ProjectName="SampleProject" TeamFullPathOnReportDate="CxServer" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1" ScanStart="Monday, January 4, 2016 2:14:03 PM" Preset="Default 2014" ScanTime="00h:04m:00s" LinesOfCodeScanned="32117" FilesScanned="187" ReportCreationTime="Saturday, January 9, 2016 1:56:41 PM" Team="CxServer" CheckmarxVersion="7.9.0" ScanComments="" ScanType="Full" SourceOrigin="LocalPath" Visibility="Public">
+  <Query id="3105" categories="OWASP Top 10 2013;A1-Injection" cweId="89" name="Second_Order_SQL_Injection" group="Python_High_Risk" Severity="High" Language="Python" LanguageHash="5168828351170839" LanguageChangeDate="2015-12-23T00:00:00.0000000" SeverityIndex="3" QueryPath="Python\Cx\Python High Risk\Second Order SQL Injection Version:0">
+    <Result NodeId="10000060031" FileName="/sample-project/src/sample_requests/create-page.py" Status="Recurrent" Line="132" Column="39" FalsePositive="False" Severity="High" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=31" SeverityIndex="3">
+      <Path ResultId="1000006" PathId="31" SimilarityId="1194728067">
+        <PathNode>
+          <FileName>/sample-project/src/sample_requests/create-page.py</FileName>
+          <Line>132</Line>
+          <Column>39</Column>
+          <NodeId>1</NodeId>
+          <Name>get</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>132</Number>
+              <Code>                person = Person.objects.get(email=email_data['email'])</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/sample_requests/create-page.py</FileName>
+          <Line>132</Line>
+          <Column>16</Column>
+          <NodeId>2</NodeId>
+          <Name>person</Name>
+          <Type></Type>
+          <Length>6</Length>
+          <Snippet>
+            <Line>
+              <Number>132</Number>
+              <Code>                person = Person.objects.get(email=email_data['email'])</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/sample_requests/create-page.py</FileName>
+          <Line>149</Line>
+          <Column>22</Column>
+          <NodeId>3</NodeId>
+          <Name>person</Name>
+          <Type></Type>
+          <Length>6</Length>
+          <Snippet>
+            <Line>
+              <Number>149</Number>
+              <Code>            requester=person,</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/sample_requests/create-page.py</FileName>
+          <Line>145</Line>
+          <Column>54</Column>
+          <NodeId>4</NodeId>
+          <Name>create</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>145</Number>
+              <Code>        engagement_request = EngagementRequest.objects.create(</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060032" FileName="/sample-project/src/sample_requests/create-page.py" Status="Recurrent" Line="132" Column="39" FalsePositive="False" Severity="High" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=32" SeverityIndex="3">
+      <Path ResultId="1000006" PathId="32" SimilarityId="-861125483">
+        <PathNode>
+          <FileName>/sample-project/src/sample_requests/create-page.py</FileName>
+          <Line>132</Line>
+          <Column>39</Column>
+          <NodeId>1</NodeId>
+          <Name>get</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>132</Number>
+              <Code>                person = Person.objects.get(email=email_data['email'])</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/sample_requests/create-page.py</FileName>
+          <Line>132</Line>
+          <Column>16</Column>
+          <NodeId>2</NodeId>
+          <Name>person</Name>
+          <Type></Type>
+          <Length>6</Length>
+          <Snippet>
+            <Line>
+              <Number>132</Number>
+              <Code>                person = Person.objects.get(email=email_data['email'])</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/sample_requests/create-page.py</FileName>
+          <Line>161</Line>
+          <Column>24</Column>
+          <NodeId>3</NodeId>
+          <Name>email</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>161</Number>
+              <Code>            email=person.email,</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/sample_requests/create-page.py</FileName>
+          <Line>159</Line>
+          <Column>70</Column>
+          <NodeId>4</NodeId>
+          <Name>create</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>159</Number>
+              <Code>        requester_subscription = EngagementRequestSubscription.objects.create(</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060033" FileName="/sample-project/src/sample_requests/create-page.py" Status="Recurrent" Line="132" Column="39" FalsePositive="False" Severity="High" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=33" SeverityIndex="3">
+      <Path ResultId="1000006" PathId="33" SimilarityId="-258865058">
+        <PathNode>
+          <FileName>/sample-project/src/sample_requests/create-page.py</FileName>
+          <Line>132</Line>
+          <Column>39</Column>
+          <NodeId>1</NodeId>
+          <Name>get</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>132</Number>
+              <Code>                person = Person.objects.get(email=email_data['email'])</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/sample_requests/create-page.py</FileName>
+          <Line>132</Line>
+          <Column>16</Column>
+          <NodeId>2</NodeId>
+          <Name>person</Name>
+          <Type></Type>
+          <Length>6</Length>
+          <Snippet>
+            <Line>
+              <Number>132</Number>
+              <Code>                person = Person.objects.get(email=email_data['email'])</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/sample_requests/create-page.py</FileName>
+          <Line>149</Line>
+          <Column>22</Column>
+          <NodeId>3</NodeId>
+          <Name>person</Name>
+          <Type></Type>
+          <Length>6</Length>
+          <Snippet>
+            <Line>
+              <Number>149</Number>
+              <Code>            requester=person,</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/sample_requests/create-page.py</FileName>
+          <Line>145</Line>
+          <Column>54</Column>
+          <NodeId>4</NodeId>
+          <Name>create</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>145</Number>
+              <Code>        engagement_request = EngagementRequest.objects.create(</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/sample_requests/create-page.py</FileName>
+          <Line>145</Line>
+          <Column>8</Column>
+          <NodeId>5</NodeId>
+          <Name>engagement_request</Name>
+          <Type></Type>
+          <Length>18</Length>
+          <Snippet>
+            <Line>
+              <Number>145</Number>
+              <Code>        engagement_request = EngagementRequest.objects.create(</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/sample_requests/create-page.py</FileName>
+          <Line>173</Line>
+          <Column>35</Column>
+          <NodeId>6</NodeId>
+          <Name>engagement_request</Name>
+          <Type></Type>
+          <Length>18</Length>
+          <Snippet>
+            <Line>
+              <Number>173</Number>
+              <Code>                engagement_request=engagement_request,</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/sample_requests/create-page.py</FileName>
+          <Line>169</Line>
+          <Column>72</Column>
+          <NodeId>7</NodeId>
+          <Name>create</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>169</Number>
+              <Code>            default_subscription = EngagementRequestSubscription.objects.create(</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060034" FileName="/sample-project/src/sample_requests/create-page.py" Status="Recurrent" Line="132" Column="39" FalsePositive="False" Severity="High" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=34" SeverityIndex="3">
+      <Path ResultId="1000006" PathId="34" SimilarityId="-936556647">
+        <PathNode>
+          <FileName>/sample-project/src/sample_requests/create-page.py</FileName>
+          <Line>132</Line>
+          <Column>39</Column>
+          <NodeId>1</NodeId>
+          <Name>get</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>132</Number>
+              <Code>                person = Person.objects.get(email=email_data['email'])</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/sample_requests/create-page.py</FileName>
+          <Line>132</Line>
+          <Column>16</Column>
+          <NodeId>2</NodeId>
+          <Name>person</Name>
+          <Type></Type>
+          <Length>6</Length>
+          <Snippet>
+            <Line>
+              <Number>132</Number>
+              <Code>                person = Person.objects.get(email=email_data['email'])</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/sample_requests/create-page.py</FileName>
+          <Line>149</Line>
+          <Column>22</Column>
+          <NodeId>3</NodeId>
+          <Name>person</Name>
+          <Type></Type>
+          <Length>6</Length>
+          <Snippet>
+            <Line>
+              <Number>149</Number>
+              <Code>            requester=person,</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/sample_requests/create-page.py</FileName>
+          <Line>145</Line>
+          <Column>54</Column>
+          <NodeId>4</NodeId>
+          <Name>create</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>145</Number>
+              <Code>        engagement_request = EngagementRequest.objects.create(</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/sample_requests/create-page.py</FileName>
+          <Line>145</Line>
+          <Column>8</Column>
+          <NodeId>5</NodeId>
+          <Name>engagement_request</Name>
+          <Type></Type>
+          <Length>18</Length>
+          <Snippet>
+            <Line>
+              <Number>145</Number>
+              <Code>        engagement_request = EngagementRequest.objects.create(</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/sample_requests/create-page.py</FileName>
+          <Line>156</Line>
+          <Column>26</Column>
+          <NodeId>6</NodeId>
+          <Name>save</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>156</Number>
+              <Code>        engagement_request.save()</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060035" FileName="/sample-project/src/sample_requests/create-page.py" Status="Recurrent" Line="132" Column="39" FalsePositive="False" Severity="High" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=35" SeverityIndex="3">
+      <Path ResultId="1000006" PathId="35" SimilarityId="-1123038328">
+        <PathNode>
+          <FileName>/sample-project/src/sample_requests/create-page.py</FileName>
+          <Line>132</Line>
+          <Column>39</Column>
+          <NodeId>1</NodeId>
+          <Name>get</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>132</Number>
+              <Code>                person = Person.objects.get(email=email_data['email'])</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/sample_requests/create-page.py</FileName>
+          <Line>132</Line>
+          <Column>16</Column>
+          <NodeId>2</NodeId>
+          <Name>person</Name>
+          <Type></Type>
+          <Length>6</Length>
+          <Snippet>
+            <Line>
+              <Number>132</Number>
+              <Code>                person = Person.objects.get(email=email_data['email'])</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/sample_requests/create-page.py</FileName>
+          <Line>161</Line>
+          <Column>24</Column>
+          <NodeId>3</NodeId>
+          <Name>email</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>161</Number>
+              <Code>            email=person.email,</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/sample_requests/create-page.py</FileName>
+          <Line>159</Line>
+          <Column>70</Column>
+          <NodeId>4</NodeId>
+          <Name>create</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>159</Number>
+              <Code>        requester_subscription = EngagementRequestSubscription.objects.create(</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/sample_requests/create-page.py</FileName>
+          <Line>159</Line>
+          <Column>8</Column>
+          <NodeId>5</NodeId>
+          <Name>requester_subscription</Name>
+          <Type></Type>
+          <Length>22</Length>
+          <Snippet>
+            <Line>
+              <Number>159</Number>
+              <Code>        requester_subscription = EngagementRequestSubscription.objects.create(</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/sample_requests/create-page.py</FileName>
+          <Line>165</Line>
+          <Column>30</Column>
+          <NodeId>6</NodeId>
+          <Name>save</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>165</Number>
+              <Code>        requester_subscription.save()</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060036" FileName="/sample-project/src/sample_requests/create-page.py" Status="Recurrent" Line="132" Column="39" FalsePositive="False" Severity="High" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=36" SeverityIndex="3">
+      <Path ResultId="1000006" PathId="36" SimilarityId="489276826">
+        <PathNode>
+          <FileName>/sample-project/src/sample_requests/create-page.py</FileName>
+          <Line>132</Line>
+          <Column>39</Column>
+          <NodeId>1</NodeId>
+          <Name>get</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>132</Number>
+              <Code>                person = Person.objects.get(email=email_data['email'])</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/sample_requests/create-page.py</FileName>
+          <Line>132</Line>
+          <Column>16</Column>
+          <NodeId>2</NodeId>
+          <Name>person</Name>
+          <Type></Type>
+          <Length>6</Length>
+          <Snippet>
+            <Line>
+              <Number>132</Number>
+              <Code>                person = Person.objects.get(email=email_data['email'])</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/sample_requests/create-page.py</FileName>
+          <Line>149</Line>
+          <Column>22</Column>
+          <NodeId>3</NodeId>
+          <Name>person</Name>
+          <Type></Type>
+          <Length>6</Length>
+          <Snippet>
+            <Line>
+              <Number>149</Number>
+              <Code>            requester=person,</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/sample_requests/create-page.py</FileName>
+          <Line>145</Line>
+          <Column>54</Column>
+          <NodeId>4</NodeId>
+          <Name>create</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>145</Number>
+              <Code>        engagement_request = EngagementRequest.objects.create(</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/sample_requests/create-page.py</FileName>
+          <Line>145</Line>
+          <Column>8</Column>
+          <NodeId>5</NodeId>
+          <Name>engagement_request</Name>
+          <Type></Type>
+          <Length>18</Length>
+          <Snippet>
+            <Line>
+              <Number>145</Number>
+              <Code>        engagement_request = EngagementRequest.objects.create(</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/sample_requests/create-page.py</FileName>
+          <Line>173</Line>
+          <Column>35</Column>
+          <NodeId>6</NodeId>
+          <Name>engagement_request</Name>
+          <Type></Type>
+          <Length>18</Length>
+          <Snippet>
+            <Line>
+              <Number>173</Number>
+              <Code>                engagement_request=engagement_request,</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/sample_requests/create-page.py</FileName>
+          <Line>169</Line>
+          <Column>72</Column>
+          <NodeId>7</NodeId>
+          <Name>create</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>169</Number>
+              <Code>            default_subscription = EngagementRequestSubscription.objects.create(</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/sample_requests/create-page.py</FileName>
+          <Line>169</Line>
+          <Column>12</Column>
+          <NodeId>8</NodeId>
+          <Name>default_subscription</Name>
+          <Type></Type>
+          <Length>20</Length>
+          <Snippet>
+            <Line>
+              <Number>169</Number>
+              <Code>            default_subscription = EngagementRequestSubscription.objects.create(</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/sample_requests/create-page.py</FileName>
+          <Line>177</Line>
+          <Column>32</Column>
+          <NodeId>9</NodeId>
+          <Name>save</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>177</Number>
+              <Code>            default_subscription.save()</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+  </Query>
+  <Query id="3106" categories="OWASP Top 10 2013;A3-Cross-Site Scripting (XSS)" cweId="79" name="Stored_XSS" group="Python_High_Risk" Severity="High" Language="Python" LanguageHash="5168828351170839" LanguageChangeDate="2015-12-23T00:00:00.0000000" SeverityIndex="3" QueryPath="Python\Cx\Python High Risk\Stored XSS Version:0">
+    <Result NodeId="10000060037" FileName="/sample-project/src/sample_requests/create-page.py" Status="Recurrent" Line="132" Column="39" FalsePositive="False" Severity="High" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=37" SeverityIndex="3">
+      <Path ResultId="1000006" PathId="37" SimilarityId="-1285842860">
+        <PathNode>
+          <FileName>/sample-project/src/sample_requests/create-page.py</FileName>
+          <Line>132</Line>
+          <Column>39</Column>
+          <NodeId>1</NodeId>
+          <Name>get</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>132</Number>
+              <Code>                person = Person.objects.get(email=email_data['email'])</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/sample_requests/create-page.py</FileName>
+          <Line>132</Line>
+          <Column>16</Column>
+          <NodeId>2</NodeId>
+          <Name>person</Name>
+          <Type></Type>
+          <Length>6</Length>
+          <Snippet>
+            <Line>
+              <Number>132</Number>
+              <Code>                person = Person.objects.get(email=email_data['email'])</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/sample_requests/create-page.py</FileName>
+          <Line>182</Line>
+          <Column>22</Column>
+          <NodeId>3</NodeId>
+          <Name>person</Name>
+          <Type></Type>
+          <Length>6</Length>
+          <Snippet>
+            <Line>
+              <Number>182</Number>
+              <Code>            'person': person,</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/sample_requests/create-page.py</FileName>
+          <Line>181</Line>
+          <Column>15</Column>
+          <NodeId>4</NodeId>
+          <Name>render_to_response</Name>
+          <Type></Type>
+          <Length>18</Length>
+          <Snippet>
+            <Line>
+              <Number>181</Number>
+              <Code>        return render_to_response('sample_requests/create-page/external_request/success.html', {</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+  </Query>
+  <Query id="3568" categories="OWASP Top 10 2013;A3-Cross-Site Scripting (XSS)" cweId="203" name="Cross_Site_History_Manipulation" group="Python_Medium_Threat" Severity="Medium" Language="Python" LanguageHash="5168828351170839" LanguageChangeDate="2015-12-23T00:00:00.0000000" SeverityIndex="2" QueryPath="Python\Cx\Python Medium Threat\Cross Site History Manipulation Version:0">
+    <Result NodeId="10000060054" FileName="/sample-project/src/sample_requests/list.py" Status="New" Line="85" Column="4" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=54" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="54" SimilarityId="1290534404">
+        <PathNode>
+          <FileName>/sample-project/src/sample_requests/list.py</FileName>
+          <Line>85</Line>
+          <Column>4</Column>
+          <NodeId>1</NodeId>
+          <Name>if</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>85</Number>
+              <Code>    if subscription_delete_form.is_valid():</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060055" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="727" Column="4" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=55" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="55" SimilarityId="-1337500124">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>727</Line>
+          <Column>4</Column>
+          <NodeId>1</NodeId>
+          <Name>if</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>727</Number>
+              <Code>    if request.method == 'POST' and form.is_valid():</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060056" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="959" Column="4" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=56" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="56" SimilarityId="-841951914">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>959</Line>
+          <Column>4</Column>
+          <NodeId>1</NodeId>
+          <Name>if</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>959</Number>
+              <Code>    if form.is_valid():</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060057" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="1059" Column="4" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=57" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="57" SimilarityId="-1131640868">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1059</Line>
+          <Column>4</Column>
+          <NodeId>1</NodeId>
+          <Name>if</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>1059</Number>
+              <Code>    if request.method == 'POST':</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060058" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="1143" Column="4" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=58" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="58" SimilarityId="1253527716">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1143</Line>
+          <Column>4</Column>
+          <NodeId>1</NodeId>
+          <Name>if</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>1143</Number>
+              <Code>    if request.method == 'POST' and form.is_valid():</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060059" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="1166" Column="4" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=59" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="59" SimilarityId="283204888">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1166</Line>
+          <Column>4</Column>
+          <NodeId>1</NodeId>
+          <Name>if</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>1166</Number>
+              <Code>    if form.is_valid():</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060060" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="1188" Column="4" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=60" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="60" SimilarityId="-593704700">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1188</Line>
+          <Column>4</Column>
+          <NodeId>1</NodeId>
+          <Name>if</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>1188</Number>
+              <Code>    if form.is_valid():</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060061" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="1221" Column="4" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=61" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="61" SimilarityId="951654354">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1221</Line>
+          <Column>4</Column>
+          <NodeId>1</NodeId>
+          <Name>if</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>1221</Number>
+              <Code>    if formset.is_valid():</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060062" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="1254" Column="4" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=62" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="62" SimilarityId="588106062">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1254</Line>
+          <Column>4</Column>
+          <NodeId>1</NodeId>
+          <Name>if</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>1254</Number>
+              <Code>    if formset.is_valid():</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060063" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="1276" Column="4" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=63" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="63" SimilarityId="-1940634044">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1276</Line>
+          <Column>4</Column>
+          <NodeId>1</NodeId>
+          <Name>if</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>1276</Number>
+              <Code>    if request.method == 'POST' and form.is_valid():</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060064" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="1326" Column="4" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=64" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="64" SimilarityId="-1363975218">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1326</Line>
+          <Column>4</Column>
+          <NodeId>1</NodeId>
+          <Name>if</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>1326</Number>
+              <Code>    if request.method == 'POST' and form.is_valid():</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060065" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="1348" Column="4" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=65" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="65" SimilarityId="349271342">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1348</Line>
+          <Column>4</Column>
+          <NodeId>1</NodeId>
+          <Name>if</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>1348</Number>
+              <Code>    if request.method == 'POST' and form.is_valid():</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060066" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="1383" Column="4" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=66" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="66" SimilarityId="657006724">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1383</Line>
+          <Column>4</Column>
+          <NodeId>1</NodeId>
+          <Name>if</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>1383</Number>
+              <Code>    if form.is_valid():</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060067" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="1398" Column="4" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=67" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="67" SimilarityId="87759714">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1398</Line>
+          <Column>4</Column>
+          <NodeId>1</NodeId>
+          <Name>if</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>1398</Number>
+              <Code>    if form.is_valid():</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060068" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="1437" Column="4" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=68" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="68" SimilarityId="-528557596">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1437</Line>
+          <Column>4</Column>
+          <NodeId>1</NodeId>
+          <Name>if</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>1437</Number>
+              <Code>    if request.method == 'POST' and form.is_valid():</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060069" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="1461" Column="4" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=69" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="69" SimilarityId="1077103406">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1461</Line>
+          <Column>4</Column>
+          <NodeId>1</NodeId>
+          <Name>if</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>1461</Number>
+              <Code>    if request.method == 'POST' and form.is_valid():</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060070" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="1496" Column="4" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=70" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="70" SimilarityId="-1298341628">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1496</Line>
+          <Column>4</Column>
+          <NodeId>1</NodeId>
+          <Name>if</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>1496</Number>
+              <Code>    if form.is_valid():</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060071" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="1511" Column="4" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=71" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="71" SimilarityId="-33221470">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1511</Line>
+          <Column>4</Column>
+          <NodeId>1</NodeId>
+          <Name>if</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>1511</Number>
+              <Code>    if form.is_valid():</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060072" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="1548" Column="4" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=72" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="72" SimilarityId="-1066853980">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1548</Line>
+          <Column>4</Column>
+          <NodeId>1</NodeId>
+          <Name>if</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>1548</Number>
+              <Code>    if form.is_valid():</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060073" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="1578" Column="8" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=73" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="73" SimilarityId="1642646564">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1578</Line>
+          <Column>8</Column>
+          <NodeId>1</NodeId>
+          <Name>if</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>1578</Number>
+              <Code>        if form.is_valid():</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060074" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="1599" Column="4" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=74" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="74" SimilarityId="381368708">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1599</Line>
+          <Column>4</Column>
+          <NodeId>1</NodeId>
+          <Name>if</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>1599</Number>
+              <Code>    if form.is_valid():</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060075" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="881" Column="8" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=75" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="75" SimilarityId="148230344">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>881</Line>
+          <Column>8</Column>
+          <NodeId>1</NodeId>
+          <Name>if</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>881</Number>
+              <Code>        if relation_form.is_valid():</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060076" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="914" Column="8" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=76" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="76" SimilarityId="-1786797070">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>914</Line>
+          <Column>8</Column>
+          <NodeId>1</NodeId>
+          <Name>if</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>914</Number>
+              <Code>        if relation_form.is_valid():</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060077" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="283" Column="8" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=77" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="77" SimilarityId="594535626">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>283</Line>
+          <Column>8</Column>
+          <NodeId>1</NodeId>
+          <Name>if</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>283</Number>
+              <Code>        if add_form.is_valid():</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060078" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="306" Column="8" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=78" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="78" SimilarityId="-5135390">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>306</Line>
+          <Column>8</Column>
+          <NodeId>1</NodeId>
+          <Name>if</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>306</Number>
+              <Code>        if edit_form.is_valid():</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060079" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="329" Column="4" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=79" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="79" SimilarityId="1403217860">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>329</Line>
+          <Column>4</Column>
+          <NodeId>1</NodeId>
+          <Name>if</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>329</Number>
+              <Code>    if form.is_valid():</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060080" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="358" Column="8" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=80" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="80" SimilarityId="1941676958">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>358</Line>
+          <Column>8</Column>
+          <NodeId>1</NodeId>
+          <Name>if</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>358</Number>
+              <Code>        if activity_type_form.is_valid():</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060081" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="394" Column="8" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=81" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="81" SimilarityId="2029642084">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>394</Line>
+          <Column>8</Column>
+          <NodeId>1</NodeId>
+          <Name>if</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>394</Number>
+              <Code>        if activity_type_form.is_valid():</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060082" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="417" Column="4" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=82" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="82" SimilarityId="1356371044">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>417</Line>
+          <Column>4</Column>
+          <NodeId>1</NodeId>
+          <Name>if</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>417</Number>
+              <Code>    if form.is_valid():</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060083" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="446" Column="8" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=83" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="83" SimilarityId="106741410">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>446</Line>
+          <Column>8</Column>
+          <NodeId>1</NodeId>
+          <Name>if</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>446</Number>
+              <Code>        if threadfix_form.is_valid():</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060084" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="469" Column="8" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=84" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="84" SimilarityId="-805743932">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>469</Line>
+          <Column>8</Column>
+          <NodeId>1</NodeId>
+          <Name>if</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>469</Number>
+              <Code>        if threadfix_form.is_valid():</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060085" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="513" Column="8" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=85" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="85" SimilarityId="-1619523282">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>513</Line>
+          <Column>8</Column>
+          <NodeId>1</NodeId>
+          <Name>if</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>513</Number>
+              <Code>        if teams_response.success:</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060086" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="534" Column="24" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=86" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="86" SimilarityId="-230296010">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>534</Line>
+          <Column>24</Column>
+          <NodeId>1</NodeId>
+          <Name>if</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>534</Number>
+              <Code>    elif request.method == 'POST':</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060087" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="573" Column="4" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=87" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="87" SimilarityId="-1472394332">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>573</Line>
+          <Column>4</Column>
+          <NodeId>1</NodeId>
+          <Name>if</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>573</Number>
+              <Code>    if form.is_valid():</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060088" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="746" Column="4" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=88" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="88" SimilarityId="958089060">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>746</Line>
+          <Column>4</Column>
+          <NodeId>1</NodeId>
+          <Name>if</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>746</Number>
+              <Code>    if form.is_valid():</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+  </Query>
+  <Query id="3566" categories="OWASP Top 10 2013;A10-Unvalidated Redirects and Forwards" cweId="601" name="Open_Redirect" group="Python_Medium_Threat" Severity="Medium" Language="Python" LanguageHash="5168828351170839" LanguageChangeDate="2015-12-23T00:00:00.0000000" SeverityIndex="2" QueryPath="Python\Cx\Python Medium Threat\Open Redirect Version:0">
+    <Result NodeId="10000060042" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="744" Column="44" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=42" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="42" SimilarityId="-1958112426">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>744</Line>
+          <Column>44</Column>
+          <NodeId>1</NodeId>
+          <Name>POST</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>744</Number>
+              <Code>    form = forms.OrganizationAddForm(request.POST or None)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>744</Line>
+          <Column>50</Column>
+          <NodeId>2</NodeId>
+          <Name>||</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>744</Number>
+              <Code>    form = forms.OrganizationAddForm(request.POST or None)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>744</Line>
+          <Column>16</Column>
+          <NodeId>3</NodeId>
+          <Name>OrganizationAddForm</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>744</Number>
+              <Code>    form = forms.OrganizationAddForm(request.POST or None)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>744</Line>
+          <Column>4</Column>
+          <NodeId>4</NodeId>
+          <Name>form</Name>
+          <Type></Type>
+          <Length>4</Length>
+          <Snippet>
+            <Line>
+              <Number>744</Number>
+              <Code>    form = forms.OrganizationAddForm(request.POST or None)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>747</Line>
+          <Column>27</Column>
+          <NodeId>5</NodeId>
+          <Name>save</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>747</Number>
+              <Code>        organization = form.save()</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>747</Line>
+          <Column>8</Column>
+          <NodeId>6</NodeId>
+          <Name>organization</Name>
+          <Type></Type>
+          <Length>12</Length>
+          <Snippet>
+            <Line>
+              <Number>747</Number>
+              <Code>        organization = form.save()</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>749</Line>
+          <Column>65</Column>
+          <NodeId>7</NodeId>
+          <Name>id</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>749</Number>
+              <Code>        return redirect('SampleProject:organization.overview', organization.id)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>749</Line>
+          <Column>15</Column>
+          <NodeId>8</NodeId>
+          <Name>redirect</Name>
+          <Type></Type>
+          <Length>8</Length>
+          <Snippet>
+            <Line>
+              <Number>749</Number>
+              <Code>        return redirect('SampleProject:organization.overview', organization.id)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060043" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="957" Column="43" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=43" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="43" SimilarityId="-429311108">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>957</Line>
+          <Column>43</Column>
+          <NodeId>1</NodeId>
+          <Name>POST</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>957</Number>
+              <Code>    form = forms.ApplicationAddForm(request.POST or None)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>957</Line>
+          <Column>49</Column>
+          <NodeId>2</NodeId>
+          <Name>||</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>957</Number>
+              <Code>    form = forms.ApplicationAddForm(request.POST or None)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>957</Line>
+          <Column>16</Column>
+          <NodeId>3</NodeId>
+          <Name>ApplicationAddForm</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>957</Number>
+              <Code>    form = forms.ApplicationAddForm(request.POST or None)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>957</Line>
+          <Column>4</Column>
+          <NodeId>4</NodeId>
+          <Name>form</Name>
+          <Type></Type>
+          <Length>4</Length>
+          <Snippet>
+            <Line>
+              <Number>957</Number>
+              <Code>    form = forms.ApplicationAddForm(request.POST or None)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>960</Line>
+          <Column>26</Column>
+          <NodeId>5</NodeId>
+          <Name>save</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>960</Number>
+              <Code>        application = form.save()</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>960</Line>
+          <Column>8</Column>
+          <NodeId>6</NodeId>
+          <Name>application</Name>
+          <Type></Type>
+          <Length>11</Length>
+          <Snippet>
+            <Line>
+              <Number>960</Number>
+              <Code>        application = form.save()</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>962</Line>
+          <Column>78</Column>
+          <NodeId>7</NodeId>
+          <Name>id</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>962</Number>
+              <Code>        return redirect('SampleProject:application.overview', application_id=application.id)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>962</Line>
+          <Column>15</Column>
+          <NodeId>8</NodeId>
+          <Name>redirect</Name>
+          <Type></Type>
+          <Length>8</Length>
+          <Snippet>
+            <Line>
+              <Number>962</Number>
+              <Code>        return redirect('SampleProject:application.overview', application_id=application.id)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060044" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="1186" Column="44" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=44" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="44" SimilarityId="184232365">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1186</Line>
+          <Column>44</Column>
+          <NodeId>1</NodeId>
+          <Name>POST</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>1186</Number>
+              <Code>    form = forms.EnvironmentEditForm(request.POST or None, instance=environment)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1186</Line>
+          <Column>50</Column>
+          <NodeId>2</NodeId>
+          <Name>||</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>1186</Number>
+              <Code>    form = forms.EnvironmentEditForm(request.POST or None, instance=environment)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1186</Line>
+          <Column>16</Column>
+          <NodeId>3</NodeId>
+          <Name>EnvironmentEditForm</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>1186</Number>
+              <Code>    form = forms.EnvironmentEditForm(request.POST or None, instance=environment)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1186</Line>
+          <Column>4</Column>
+          <NodeId>4</NodeId>
+          <Name>form</Name>
+          <Type></Type>
+          <Length>4</Length>
+          <Snippet>
+            <Line>
+              <Number>1186</Number>
+              <Code>    form = forms.EnvironmentEditForm(request.POST or None, instance=environment)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1189</Line>
+          <Column>26</Column>
+          <NodeId>5</NodeId>
+          <Name>save</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>1189</Number>
+              <Code>        environment = form.save()</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1189</Line>
+          <Column>8</Column>
+          <NodeId>6</NodeId>
+          <Name>environment</Name>
+          <Type></Type>
+          <Length>11</Length>
+          <Snippet>
+            <Line>
+              <Number>1189</Number>
+              <Code>        environment = form.save()</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1191</Line>
+          <Column>82</Column>
+          <NodeId>7</NodeId>
+          <Name>id</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>1191</Number>
+              <Code>        return redirect('SampleProject:environment.edit.general', environment_id=environment.id)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1191</Line>
+          <Column>15</Column>
+          <NodeId>8</NodeId>
+          <Name>redirect</Name>
+          <Type></Type>
+          <Length>8</Length>
+          <Snippet>
+            <Line>
+              <Number>1191</Number>
+              <Code>        return redirect('SampleProject:environment.edit.general', environment_id=environment.id)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060045" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="1324" Column="42" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=45" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="45" SimilarityId="-1938411484">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1324</Line>
+          <Column>42</Column>
+          <NodeId>1</NodeId>
+          <Name>POST</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>1324</Number>
+              <Code>    form = forms.EngagementAddForm(request.POST or None)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1324</Line>
+          <Column>48</Column>
+          <NodeId>2</NodeId>
+          <Name>||</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>1324</Number>
+              <Code>    form = forms.EngagementAddForm(request.POST or None)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1324</Line>
+          <Column>16</Column>
+          <NodeId>3</NodeId>
+          <Name>EngagementAddForm</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>1324</Number>
+              <Code>    form = forms.EngagementAddForm(request.POST or None)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1324</Line>
+          <Column>4</Column>
+          <NodeId>4</NodeId>
+          <Name>form</Name>
+          <Type></Type>
+          <Length>4</Length>
+          <Snippet>
+            <Line>
+              <Number>1324</Number>
+              <Code>    form = forms.EngagementAddForm(request.POST or None)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1327</Line>
+          <Column>25</Column>
+          <NodeId>5</NodeId>
+          <Name>save</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>1327</Number>
+              <Code>        engagement = form.save(commit=False)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1327</Line>
+          <Column>8</Column>
+          <NodeId>6</NodeId>
+          <Name>engagement</Name>
+          <Type></Type>
+          <Length>10</Length>
+          <Snippet>
+            <Line>
+              <Number>1327</Number>
+              <Code>        engagement = form.save(commit=False)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1331</Line>
+          <Column>73</Column>
+          <NodeId>7</NodeId>
+          <Name>id</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>1331</Number>
+              <Code>        return redirect('SampleProject:engagement.detail', engagement_id=engagement.id)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1331</Line>
+          <Column>15</Column>
+          <NodeId>8</NodeId>
+          <Name>redirect</Name>
+          <Type></Type>
+          <Length>8</Length>
+          <Snippet>
+            <Line>
+              <Number>1331</Number>
+              <Code>        return redirect('SampleProject:engagement.detail', engagement_id=engagement.id)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060046" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="1346" Column="43" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=46" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="46" SimilarityId="-946149422">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1346</Line>
+          <Column>43</Column>
+          <NodeId>1</NodeId>
+          <Name>POST</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>1346</Number>
+              <Code>    form = forms.EngagementEditForm(request.POST or None, instance=engagement)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1346</Line>
+          <Column>49</Column>
+          <NodeId>2</NodeId>
+          <Name>||</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>1346</Number>
+              <Code>    form = forms.EngagementEditForm(request.POST or None, instance=engagement)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1346</Line>
+          <Column>16</Column>
+          <NodeId>3</NodeId>
+          <Name>EngagementEditForm</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>1346</Number>
+              <Code>    form = forms.EngagementEditForm(request.POST or None, instance=engagement)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1346</Line>
+          <Column>4</Column>
+          <NodeId>4</NodeId>
+          <Name>form</Name>
+          <Type></Type>
+          <Length>4</Length>
+          <Snippet>
+            <Line>
+              <Number>1346</Number>
+              <Code>    form = forms.EngagementEditForm(request.POST or None, instance=engagement)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1349</Line>
+          <Column>25</Column>
+          <NodeId>5</NodeId>
+          <Name>save</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>1349</Number>
+              <Code>        engagement = form.save()</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1349</Line>
+          <Column>8</Column>
+          <NodeId>6</NodeId>
+          <Name>engagement</Name>
+          <Type></Type>
+          <Length>10</Length>
+          <Snippet>
+            <Line>
+              <Number>1349</Number>
+              <Code>        engagement = form.save()</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1351</Line>
+          <Column>73</Column>
+          <NodeId>7</NodeId>
+          <Name>id</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>1351</Number>
+              <Code>        return redirect('SampleProject:engagement.detail', engagement_id=engagement.id)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1351</Line>
+          <Column>15</Column>
+          <NodeId>8</NodeId>
+          <Name>redirect</Name>
+          <Type></Type>
+          <Length>8</Length>
+          <Snippet>
+            <Line>
+              <Number>1351</Number>
+              <Code>        return redirect('SampleProject:engagement.detail', engagement_id=engagement.id)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060047" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="1367" Column="52" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=47" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="47" SimilarityId="875918672">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1367</Line>
+          <Column>52</Column>
+          <NodeId>1</NodeId>
+          <Name>POST</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>1367</Number>
+              <Code>    status_form = forms.EngagementStatusForm(request.POST, instance=engagement)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1367</Line>
+          <Column>23</Column>
+          <NodeId>2</NodeId>
+          <Name>EngagementStatusForm</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>1367</Number>
+              <Code>    status_form = forms.EngagementStatusForm(request.POST, instance=engagement)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1367</Line>
+          <Column>4</Column>
+          <NodeId>3</NodeId>
+          <Name>status_form</Name>
+          <Type></Type>
+          <Length>11</Length>
+          <Snippet>
+            <Line>
+              <Number>1367</Number>
+              <Code>    status_form = forms.EngagementStatusForm(request.POST, instance=engagement)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1370</Line>
+          <Column>32</Column>
+          <NodeId>4</NodeId>
+          <Name>save</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>1370</Number>
+              <Code>        engagement = status_form.save()</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1370</Line>
+          <Column>8</Column>
+          <NodeId>5</NodeId>
+          <Name>engagement</Name>
+          <Type></Type>
+          <Length>10</Length>
+          <Snippet>
+            <Line>
+              <Number>1370</Number>
+              <Code>        engagement = status_form.save()</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1373</Line>
+          <Column>69</Column>
+          <NodeId>6</NodeId>
+          <Name>id</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>1373</Number>
+              <Code>    return redirect('SampleProject:engagement.detail', engagement_id=engagement.id)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1373</Line>
+          <Column>11</Column>
+          <NodeId>7</NodeId>
+          <Name>redirect</Name>
+          <Type></Type>
+          <Length>8</Length>
+          <Snippet>
+            <Line>
+              <Number>1373</Number>
+              <Code>    return redirect('SampleProject:engagement.detail', engagement_id=engagement.id)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060048" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="1396" Column="49" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=48" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="48" SimilarityId="468047565">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1396</Line>
+          <Column>49</Column>
+          <NodeId>1</NodeId>
+          <Name>POST</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>1396</Number>
+              <Code>    form = forms.EngagementCommentAddForm(request.POST)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1396</Line>
+          <Column>16</Column>
+          <NodeId>2</NodeId>
+          <Name>EngagementCommentAddForm</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>1396</Number>
+              <Code>    form = forms.EngagementCommentAddForm(request.POST)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1396</Line>
+          <Column>4</Column>
+          <NodeId>3</NodeId>
+          <Name>form</Name>
+          <Type></Type>
+          <Length>4</Length>
+          <Snippet>
+            <Line>
+              <Number>1396</Number>
+              <Code>    form = forms.EngagementCommentAddForm(request.POST)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1399</Line>
+          <Column>22</Column>
+          <NodeId>4</NodeId>
+          <Name>save</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>1399</Number>
+              <Code>        comment = form.save(commit=False)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1399</Line>
+          <Column>8</Column>
+          <NodeId>5</NodeId>
+          <Name>comment</Name>
+          <Type></Type>
+          <Length>7</Length>
+          <Snippet>
+            <Line>
+              <Number>1399</Number>
+              <Code>        comment = form.save(commit=False)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1404</Line>
+          <Column>125</Column>
+          <NodeId>6</NodeId>
+          <Name>id</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>1404</Number>
+              <Code>        return redirect(reverse('SampleProject:engagement.detail', kwargs={'engagement_id': engagement.id}) + '#comment-' + str(comment.id))</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1404</Line>
+          <Column>114</Column>
+          <NodeId>7</NodeId>
+          <Name>str</Name>
+          <Type></Type>
+          <Length>3</Length>
+          <Snippet>
+            <Line>
+              <Number>1404</Number>
+              <Code>        return redirect(reverse('SampleProject:engagement.detail', kwargs={'engagement_id': engagement.id}) + '#comment-' + str(comment.id))</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1404</Line>
+          <Column>15</Column>
+          <NodeId>8</NodeId>
+          <Name>redirect</Name>
+          <Type></Type>
+          <Length>8</Length>
+          <Snippet>
+            <Line>
+              <Number>1404</Number>
+              <Code>        return redirect(reverse('SampleProject:engagement.detail', kwargs={'engagement_id': engagement.id}) + '#comment-' + str(comment.id))</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060049" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="1435" Column="40" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=49" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="49" SimilarityId="-1276696432">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1435</Line>
+          <Column>40</Column>
+          <NodeId>1</NodeId>
+          <Name>POST</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>1435</Number>
+              <Code>    form = forms.ActivityAddForm(request.POST or None)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1435</Line>
+          <Column>46</Column>
+          <NodeId>2</NodeId>
+          <Name>||</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>1435</Number>
+              <Code>    form = forms.ActivityAddForm(request.POST or None)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1435</Line>
+          <Column>16</Column>
+          <NodeId>3</NodeId>
+          <Name>ActivityAddForm</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>1435</Number>
+              <Code>    form = forms.ActivityAddForm(request.POST or None)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1435</Line>
+          <Column>4</Column>
+          <NodeId>4</NodeId>
+          <Name>form</Name>
+          <Type></Type>
+          <Length>4</Length>
+          <Snippet>
+            <Line>
+              <Number>1435</Number>
+              <Code>    form = forms.ActivityAddForm(request.POST or None)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1438</Line>
+          <Column>23</Column>
+          <NodeId>5</NodeId>
+          <Name>save</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>1438</Number>
+              <Code>        activity = form.save(commit=False)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1438</Line>
+          <Column>8</Column>
+          <NodeId>6</NodeId>
+          <Name>activity</Name>
+          <Type></Type>
+          <Length>8</Length>
+          <Snippet>
+            <Line>
+              <Number>1438</Number>
+              <Code>        activity = form.save(commit=False)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1443</Line>
+          <Column>67</Column>
+          <NodeId>7</NodeId>
+          <Name>id</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>1443</Number>
+              <Code>        return redirect('SampleProject:activity.detail', activity_id=activity.id)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1443</Line>
+          <Column>15</Column>
+          <NodeId>8</NodeId>
+          <Name>redirect</Name>
+          <Type></Type>
+          <Length>8</Length>
+          <Snippet>
+            <Line>
+              <Number>1443</Number>
+              <Code>        return redirect('SampleProject:activity.detail', activity_id=activity.id)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060050" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="1459" Column="41" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=50" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="50" SimilarityId="1861440226">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1459</Line>
+          <Column>41</Column>
+          <NodeId>1</NodeId>
+          <Name>POST</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>1459</Number>
+              <Code>    form = forms.ActivityEditForm(request.POST or None, instance=activity)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1459</Line>
+          <Column>47</Column>
+          <NodeId>2</NodeId>
+          <Name>||</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>1459</Number>
+              <Code>    form = forms.ActivityEditForm(request.POST or None, instance=activity)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1459</Line>
+          <Column>16</Column>
+          <NodeId>3</NodeId>
+          <Name>ActivityEditForm</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>1459</Number>
+              <Code>    form = forms.ActivityEditForm(request.POST or None, instance=activity)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1459</Line>
+          <Column>4</Column>
+          <NodeId>4</NodeId>
+          <Name>form</Name>
+          <Type></Type>
+          <Length>4</Length>
+          <Snippet>
+            <Line>
+              <Number>1459</Number>
+              <Code>    form = forms.ActivityEditForm(request.POST or None, instance=activity)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1462</Line>
+          <Column>23</Column>
+          <NodeId>5</NodeId>
+          <Name>save</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>1462</Number>
+              <Code>        activity = form.save()</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1462</Line>
+          <Column>8</Column>
+          <NodeId>6</NodeId>
+          <Name>activity</Name>
+          <Type></Type>
+          <Length>8</Length>
+          <Snippet>
+            <Line>
+              <Number>1462</Number>
+              <Code>        activity = form.save()</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1464</Line>
+          <Column>67</Column>
+          <NodeId>7</NodeId>
+          <Name>id</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>1464</Number>
+              <Code>        return redirect('SampleProject:activity.detail', activity_id=activity.id)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1464</Line>
+          <Column>15</Column>
+          <NodeId>8</NodeId>
+          <Name>redirect</Name>
+          <Type></Type>
+          <Length>8</Length>
+          <Snippet>
+            <Line>
+              <Number>1464</Number>
+              <Code>        return redirect('SampleProject:activity.detail', activity_id=activity.id)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060051" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="1480" Column="50" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=51" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="51" SimilarityId="65346464">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1480</Line>
+          <Column>50</Column>
+          <NodeId>1</NodeId>
+          <Name>POST</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>1480</Number>
+              <Code>    status_form = forms.ActivityStatusForm(request.POST, instance=activity)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1480</Line>
+          <Column>23</Column>
+          <NodeId>2</NodeId>
+          <Name>ActivityStatusForm</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>1480</Number>
+              <Code>    status_form = forms.ActivityStatusForm(request.POST, instance=activity)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1480</Line>
+          <Column>4</Column>
+          <NodeId>3</NodeId>
+          <Name>status_form</Name>
+          <Type></Type>
+          <Length>11</Length>
+          <Snippet>
+            <Line>
+              <Number>1480</Number>
+              <Code>    status_form = forms.ActivityStatusForm(request.POST, instance=activity)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1483</Line>
+          <Column>30</Column>
+          <NodeId>4</NodeId>
+          <Name>save</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>1483</Number>
+              <Code>        activity = status_form.save()</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1483</Line>
+          <Column>8</Column>
+          <NodeId>5</NodeId>
+          <Name>activity</Name>
+          <Type></Type>
+          <Length>8</Length>
+          <Snippet>
+            <Line>
+              <Number>1483</Number>
+              <Code>        activity = status_form.save()</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1486</Line>
+          <Column>63</Column>
+          <NodeId>6</NodeId>
+          <Name>id</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>1486</Number>
+              <Code>    return redirect('SampleProject:activity.detail', activity_id=activity.id)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1486</Line>
+          <Column>11</Column>
+          <NodeId>7</NodeId>
+          <Name>redirect</Name>
+          <Type></Type>
+          <Length>8</Length>
+          <Snippet>
+            <Line>
+              <Number>1486</Number>
+              <Code>    return redirect('SampleProject:activity.detail', activity_id=activity.id)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060052" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="1509" Column="47" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=52" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="52" SimilarityId="303320205">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1509</Line>
+          <Column>47</Column>
+          <NodeId>1</NodeId>
+          <Name>POST</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>1509</Number>
+              <Code>    form = forms.ActivityCommentAddForm(request.POST)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1509</Line>
+          <Column>16</Column>
+          <NodeId>2</NodeId>
+          <Name>ActivityCommentAddForm</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>1509</Number>
+              <Code>    form = forms.ActivityCommentAddForm(request.POST)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1509</Line>
+          <Column>4</Column>
+          <NodeId>3</NodeId>
+          <Name>form</Name>
+          <Type></Type>
+          <Length>4</Length>
+          <Snippet>
+            <Line>
+              <Number>1509</Number>
+              <Code>    form = forms.ActivityCommentAddForm(request.POST)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1512</Line>
+          <Column>22</Column>
+          <NodeId>4</NodeId>
+          <Name>save</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>1512</Number>
+              <Code>        comment = form.save(commit=False)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1512</Line>
+          <Column>8</Column>
+          <NodeId>5</NodeId>
+          <Name>comment</Name>
+          <Type></Type>
+          <Length>7</Length>
+          <Snippet>
+            <Line>
+              <Number>1512</Number>
+              <Code>        comment = form.save(commit=False)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1517</Line>
+          <Column>119</Column>
+          <NodeId>6</NodeId>
+          <Name>id</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>1517</Number>
+              <Code>        return redirect(reverse('SampleProject:activity.detail', kwargs={'activity_id': activity.id}) + '#comment-' + str(comment.id))</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1517</Line>
+          <Column>108</Column>
+          <NodeId>7</NodeId>
+          <Name>str</Name>
+          <Type></Type>
+          <Length>3</Length>
+          <Snippet>
+            <Line>
+              <Number>1517</Number>
+              <Code>        return redirect(reverse('SampleProject:activity.detail', kwargs={'activity_id': activity.id}) + '#comment-' + str(comment.id))</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1517</Line>
+          <Column>15</Column>
+          <NodeId>8</NodeId>
+          <Name>redirect</Name>
+          <Type></Type>
+          <Length>8</Length>
+          <Snippet>
+            <Line>
+              <Number>1517</Number>
+              <Code>        return redirect(reverse('SampleProject:activity.detail', kwargs={'activity_id': activity.id}) + '#comment-' + str(comment.id))</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060053" FileName="/sample-project/src/SampleProject/list.py" Status="New" Line="1575" Column="35" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=53" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="53" SimilarityId="-1567865143">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1575</Line>
+          <Column>35</Column>
+          <NodeId>1</NodeId>
+          <Name>POST</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>1575</Number>
+              <Code>    form = forms.PersonForm(request.POST or None, instance=person)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1575</Line>
+          <Column>41</Column>
+          <NodeId>2</NodeId>
+          <Name>||</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>1575</Number>
+              <Code>    form = forms.PersonForm(request.POST or None, instance=person)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1575</Line>
+          <Column>16</Column>
+          <NodeId>3</NodeId>
+          <Name>PersonForm</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>1575</Number>
+              <Code>    form = forms.PersonForm(request.POST or None, instance=person)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1575</Line>
+          <Column>4</Column>
+          <NodeId>4</NodeId>
+          <Name>form</Name>
+          <Type></Type>
+          <Length>4</Length>
+          <Snippet>
+            <Line>
+              <Number>1575</Number>
+              <Code>    form = forms.PersonForm(request.POST or None, instance=person)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1579</Line>
+          <Column>25</Column>
+          <NodeId>5</NodeId>
+          <Name>save</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>1579</Number>
+              <Code>            person = form.save()</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1579</Line>
+          <Column>12</Column>
+          <NodeId>6</NodeId>
+          <Name>person</Name>
+          <Type></Type>
+          <Length>6</Length>
+          <Snippet>
+            <Line>
+              <Number>1579</Number>
+              <Code>            person = form.save()</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1581</Line>
+          <Column>55</Column>
+          <NodeId>7</NodeId>
+          <Name>id</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>1581</Number>
+              <Code>            return redirect('SampleProject:person.detail', person.id)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/list.py</FileName>
+          <Line>1581</Line>
+          <Column>19</Column>
+          <NodeId>8</NodeId>
+          <Name>redirect</Name>
+          <Type></Type>
+          <Length>8</Length>
+          <Snippet>
+            <Line>
+              <Number>1581</Number>
+              <Code>            return redirect('SampleProject:person.detail', person.id)</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+  </Query>
+  <Query id="3116" categories="OWASP Top 10 2013;A6-Sensitive Data Exposure" cweId="359" name="Privacy_Violation" group="Python_Medium_Threat" Severity="Medium" Language="Python" LanguageHash="5168828351170839" LanguageChangeDate="2015-12-23T00:00:00.0000000" SeverityIndex="2" QueryPath="Python\Cx\Python Medium Threat\Privacy Violation Version:0">
+    <Result NodeId="10000060039" FileName="/sample-project/src/SampleProject/templates/SampleProject/application/environments.html" Status="Recurrent" Line="48" Column="119" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=39" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="39" SimilarityId="1684438530">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/templates/SampleProject/application/environments.html</FileName>
+          <Line>48</Line>
+          <Column>119</Column>
+          <NodeId>1</NodeId>
+          <Name>password</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>48</Number>
+              <Code>              &lt;td&gt;{% if credential.password %}&lt;span class="collapse fade passwords-{{ environment.id }}"&gt;{{ credential.password }}&lt;/span&gt;&lt;span class="collapse in passwords-{{ environment.id }} fade"&gt;&lt;span class="text-warning"&gt;&lt;span class="fa fa-eye-slash" aria-hidden="true"&gt;&lt;/span&gt; Hidden&lt;/span&gt;&lt;/span&gt;{% else %}&lt;small class="text-muted"&gt;&lt;em&gt;N/A&lt;/em&gt;&lt;/small&gt;{% endif %}&lt;/td&gt;</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/templates/SampleProject/application/environments.html</FileName>
+          <Line>48</Line>
+          <Column>106</Column>
+          <NodeId>2</NodeId>
+          <Name>print</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>48</Number>
+              <Code>              &lt;td&gt;{% if credential.password %}&lt;span class="collapse fade passwords-{{ environment.id }}"&gt;{{ credential.password }}&lt;/span&gt;&lt;span class="collapse in passwords-{{ environment.id }} fade"&gt;&lt;span class="text-warning"&gt;&lt;span class="fa fa-eye-slash" aria-hidden="true"&gt;&lt;/span&gt; Hidden&lt;/span&gt;&lt;/span&gt;{% else %}&lt;small class="text-muted"&gt;&lt;em&gt;N/A&lt;/em&gt;&lt;/small&gt;{% endif %}&lt;/td&gt;</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+    <Result NodeId="10000060040" FileName="/sample-project/src/SampleProject/templates/registration/login.html" Status="Recurrent" Line="41" Column="22" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=40" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="40" SimilarityId="1840964866">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/templates/registration/login.html</FileName>
+          <Line>41</Line>
+          <Column>22</Column>
+          <NodeId>1</NodeId>
+          <Name>password</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>41</Number>
+              <Code>              {{ form.password | add_class:"form-control" | add_class:"input-lg" | attr:"placeholder:Password" }}</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/templates/registration/login.html</FileName>
+          <Line>41</Line>
+          <Column>32</Column>
+          <NodeId>2</NodeId>
+          <Name>add_class</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>41</Number>
+              <Code>              {{ form.password | add_class:"form-control" | add_class:"input-lg" | attr:"placeholder:Password" }}</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/templates/registration/login.html</FileName>
+          <Line>41</Line>
+          <Column>59</Column>
+          <NodeId>3</NodeId>
+          <Name>add_class</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>41</Number>
+              <Code>              {{ form.password | add_class:"form-control" | add_class:"input-lg" | attr:"placeholder:Password" }}</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/templates/registration/login.html</FileName>
+          <Line>41</Line>
+          <Column>82</Column>
+          <NodeId>4</NodeId>
+          <Name>attr</Name>
+          <Type></Type>
+          <Length>1</Length>
+          <Snippet>
+            <Line>
+              <Number>41</Number>
+              <Code>              {{ form.password | add_class:"form-control" | add_class:"input-lg" | attr:"placeholder:Password" }}</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/templates/registration/login.html</FileName>
+          <Line>41</Line>
+          <Column>15</Column>
+          <NodeId>5</NodeId>
+          <Name>print</Name>
+          <Type></Type>
+          <Length>2</Length>
+          <Snippet>
+            <Line>
+              <Number>41</Number>
+              <Code>              {{ form.password | add_class:"form-control" | add_class:"input-lg" | attr:"placeholder:Password" }}</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+  </Query>
+  <Query id="2962" categories="OWASP Top 10 2013;A3-Cross-Site Scripting (XSS)" cweId="79" name="Client_Cross_Frame_Scripting_Attack" group="JavaScript_Medium_Threat" Severity="Medium" Language="JavaScript" LanguageHash="1677137068010489" LanguageChangeDate="2015-12-23T00:00:00.0000000" SeverityIndex="2" QueryPath="JavaScript\Cx\JavaScript Medium Threat\Client Cross Frame Scripting Attack Version:1">
+    <Result NodeId="10000060011" FileName="/sample-project/src/SampleProject/templates/SampleProject/activity/edit.html" Status="Recurrent" Line="1" Column="1000" FalsePositive="False" Severity="Medium" AssignToUser="" state="0" Remark="" DeepLink="https://checkmarxserver.exmpale.com/CxWebClient/ViewerMain.aspx?scanid=1000006&amp;projectid=1&amp;pathid=11" SeverityIndex="2">
+      <Path ResultId="1000006" PathId="11" SimilarityId="1195191299">
+        <PathNode>
+          <FileName>/sample-project/src/SampleProject/templates/SampleProject/activity/edit.html</FileName>
+          <Line>1</Line>
+          <Column>1000</Column>
+          <NodeId>1</NodeId>
+          <Name>CxJSNS_1495026606</Name>
+          <Type></Type>
+          <Length>0</Length>
+          <Snippet>
+            <Line>
+              <Number>1</Number>
+              <Code>{% extends "SampleProject/activity/base_activities.html" %}</Code>
+            </Line>
+          </Snippet>
+        </PathNode>
+      </Path>
+    </Result>
+  </Query>
+</CxXMLResults>
